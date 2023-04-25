@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="flow-white.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="css/Nav-Head.css"/>
+    <link rel="stylesheet" href="css/profile.css"/>
+
+    <title>Flow | Profile Details</title>
+</head>
+<body>
+
+    <!--NAVBAR-->  
+<nav class="navbar">
+    <ul class="navbar-nav">
+        <li class="">
+        <img src="flow-logo.png" class="logo">
+        </li>
+
+        <li class="nav-item">
+        <a href="home.html" class="nav-link">
+            <span class="material-symbols-outlined ">home</span>
+        </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="statistics.html" class="nav-link">
+            <span class="material-icons ">insert_chart_outlined</span>
+        </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="transactions.html" class="nav-link">
+            <span class="material-symbols-outlined">credit_card</span>
+        </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="accounts.html" class="nav-link">
+            <span class="material-icons ic-highlight">account_circle</span>
+        </a>
+        </li>
+    </ul>
+    </nav>
+<!--CONTENT-->
+<main>
+    <!--header-->
+        <div class="header">
+            <!--php code for date today-->
+            <p class="p-head"> December 23, 2022</p>
+            <span class="Span-Bold">Welcome back,</span>
+            <!--php code for FIRST NAME-->
+            <span class="Span-Bold highlight"> Rose
+            </span>
+        </div>
+        <h1 class="head-title">
+          Profile Details
+        </h1>
+        <div class="profile-cont">
+            <h1 class="head-title title-highlight">My Account</h1>
+            <table class="profile-table">
+                <tr class="profile-tr">
+                    <td class="profile-tr bold">REGISTERED NAME</td>
+                    <td class="bold">EMAIL ADDRESS</td>
+                </tr>
+                <tr>
+                    <td class="light">Loremipsum Dolorsit</td>
+                    <td class="light">Loremipsum@dolorsit.amet</td>
+                </tr>
+                <tr>
+                    <td class="bold">BIRTHDAY</td>
+                    <td class="bold">CONTACT NUMBER</td>
+                </tr>
+                <tr>
+                    <td class="light">01/01/2000</td>
+                    <td class="light">0000000000</td>
+                </tr>
+                <!--loop depending on how many accounts-->
+                <tr>
+                    <td class="bold">ACCOUNT NUMBER</td>
+                    <td class="bold">BANK NAME</td>
+                </tr>
+                <tr>
+                    <td class="light">0000000000</td>
+                    <td class="light">BPI</td>
+                </tr>
+                <tr>
+                    <td>
+                        <form>
+                            <button formaction="accounts-edit.php" class="add-button" value="EDIT">EDIT</button>
+                        </form>
+                      
+                    </td>
+                    <td>
+                        <form>
+                            <input class="add-button outlined"type="submit" value="LOGOUT">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="quick-acc">
+            <h3 class="small-title-black">Add a Bank Account</h3>
+            <form >
+                <input class="rounded-form" type="text" name="Acc_num" placeholder="Account Number"><br>
+                <input class="rounded-form" type="text" name="Bank_name" placeholder="Bank Name"><br>
+                <input class="add-button save" type="submit" value="ADD ACCOUNT">
+            </form>
+        </div>
+</body>
+</html>

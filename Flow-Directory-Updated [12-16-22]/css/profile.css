@@ -1,0 +1,161 @@
+
+
+.profile-table{
+    font-size: 80%;
+    margin-left: 2rem;
+}
+.profile-cont{
+    background-color: white;
+    padding: 2rem;
+    width:30%;
+    border-radius: 15px;
+    filter: drop-shadow(0px 3px 30px rgba(123, 97, 255, 0.2));
+}.profile-tr{
+    width: 55%;
+   
+}.bold{
+    font-weight: 700;
+}.light{
+    font-weight: 300;
+}.title-highlight{
+    color: #B17F33;
+}
+
+.quick-acc{
+    margin-top: 1%;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 15px;
+    filter: drop-shadow(0px 3px 30px rgba(123, 97, 255, 0.1));
+    
+}.rounded-form{
+    width: 90%;
+    padding: 1rem;
+    margin: 1%;
+    border-style: none;
+    background-color: #F5F3ED;
+    border-radius: 15px;
+    font-family: poppins;
+    font-weight: 100;
+}
+
+
+.add-button{
+    width:80%;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-style: none;
+    background-color: #B17F33;
+    font-family: poppins;
+    font-weight: 700;
+    color: white;
+    margin: 1%;
+    cursor: pointer;
+    transition: 0.3s;
+}.add-button:hover{
+    transition: 0.3s;
+    width:100%;
+}.outlined{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #B17F33;
+    background: none;
+    color: #B17F33;
+}.save{
+    width: 42%;
+}.save:hover{
+    width: 50%;
+}
+
+
+.acc-table{
+    background-color: white;
+    padding: 2%;
+}.acc-table td{
+    width: 40%;
+    padding: 0.5%;
+    margin: 1%; margin-left: 50%;
+}.acc-head{
+    font-weight: 700;
+}
+
+.input-acc{
+    padding: 4%;
+    width: 100%;
+    border-style: solid;
+    border: none;
+    background-color: #faf0f0;
+    border-radius: 5px;
+}
+
+
+.transaction{
+    border-collapse:collapse;
+    text-align: center;
+    width: 100%;
+    margin-top: 1%;
+}.transc-head{
+    font-weight: 400;
+    font-size: 90% ;
+}
+
+.data-row{
+    border-style: solid;
+    border-top: none; border-right: none; border-left: none;
+    border-color: white;
+    border-width: 5px;
+}.td-desc{
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    font-size: 80%;
+    height: 2rem;
+}.td-highlight{
+    font-weight: 700;
+    height: 2.3rem;
+}.body-tr{
+    background-color:#F5F3ED;
+}td:first-child,
+th:first-child {
+  border-radius: 15px 0 0 15px;
+}td{
+    padding: 0 1rem ;
+}
+td:last-child,
+th:last-child {
+  border-radius: 0 15px 15px 0;
+}
+
+.delete-button{
+    font-family: Poppins;
+    font-weight: 500;
+    color: white;
+    background: #B17F33;
+    border-style: none;
+    border-radius: 10px;
+    width: 5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}.delete-button:hover{
+    width: 6rem;
+    transition: 0.31s;
+}
+
+
+/*Samll Screens*/
+
+@media only screen and (max-width: 900px){
+
+    .profile-cont{
+        width: 90%;
+        font-size: 0.75rem;
+    }.quick-acc{
+        width: 90% ;
+        margin-top: 5%;
+    }body{
+        padding-bottom: 6rem;
+    }
+}
+
+ 

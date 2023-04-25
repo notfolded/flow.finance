@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="flow-white.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="css/Nav-Head.css"/>
+    <link rel="stylesheet" href="css/Main-Hero.css"/>
+    
+    <title>Flow | Home</title>
+</head>
+<body>
+
+<!--NAVBAR-->  
+<nav class="navbar">
+    <ul class="navbar-nav">
+        <li class="">
+        <img src="flow-logo.png" class="logo">
+        </li>
+
+        <li class="nav-item">
+        <a href="home.html" class="nav-link">
+            <span class="material-symbols-outlined ic-highlight">home</span>
+        </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="statistics.html" class="nav-link">
+            <span class="material-icons">insert_chart_outlined</span>
+        </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="transactions.html" class="nav-link">
+            <span class="material-symbols-outlined">credit_card</span>
+        </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="accounts.html" class="nav-link">
+            <span class="material-icons">account_circle</span>
+        </a>
+        </li>
+    </ul>
+    </nav>
+      
+  <!--CONTENT-->
+      <main>
+      <!--header-->
+          <div class="header">
+              <!--php code for date today-->
+              <p class="p-head"> December 23, 2022</p>
+              <span class="Span-Bold">Welcome back,</span>
+              <!--php code for FIRST NAME-->
+              <span class="Span-Bold highlight"> Rose
+              </span>
+          </div>
+          <h1 class="head-title">
+            Dashboard Overview
+          </h1>
+<!--MAIN DASHBOARD-->
+    <div class="Hero-Main">
+        <!--LEFT SIDE-->
+            <div class="Left-Hero">    
+                <!--BALANCE CARDS-->
+                <div class="balance-container">
+                    <div class="balance-card">
+                        <h3 class="bal-title">current balance</h3>
+                        <div class="bal-card1">
+                            <h1 class="balance">
+                                PHP 99,999.00
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="balance-card">
+                        <h3 class="bal-title">current balance</h3>
+                        <div class="bal-card1">
+                            <h1 class="balance">
+                                PHP 99,999.00
+                            </h1>
+                        </div>
+                    </div>                    
+                    <div class="balance-card">
+                        <h3 class="bal-title">current balance</h3>
+                        <div class="bal-card1">
+                            <h1 class="balance">
+                                PHP 99,999.00
+                            </h1>
+                        </div>
+                    </div> 
+                </div>  
+                <!--TRANSACTION HISTORY-->
+                <div class="transc-history">
+                    <h1 class="head-title">
+                        Recent Transactions
+                    </h1>
+                    <table class="transaction">
+                        <thead class="transc-head">
+                            <tr>
+                                <td>ACCOUNT</td>
+                                <td>BANK</td>
+                                <td>CATEGORY</td>
+                                <td>DATE</td>
+                                <td>AMMOUNT</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="data-row">
+                                <td class="td-desc">123456789</td>
+                                <td class="td-desc">BPI</td>
+                                <td class="td-highlight">expense</td>
+                                <td class="td-desc">December 9, 2022</td>
+                                <td class="td-highlight">PHP 25.00</td>
+    
+                                <td class="transc-delete">
+                                    <form action="transc-delete.php?" method="post">
+                                        <input type="hidden" name="transaction_id" value="<?php $row['transaction_id'] ?>">
+                                        <input class="delete-button" type="submit" name="delete" value="delete">
+                                    </form>
+                                </td>     
+                                
+                            </tr>                                   
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+   
+   <!--RIGHT SIDE -->
+           <div class="Right-Hero">
+                <!--QUICK ACTIONS-->
+                <div class="quick-acc">
+                    <h3 class="small-title-black">ADD AN ACCOUNT</h3>
+                    <form >
+                        <input class="rounded-form" type="text" name="Acc_num" placeholder="Account Number"><br>
+                        <input class="rounded-form" type="text" name="Bank_name" placeholder="Bank Name"><br>
+                        <input class="add-button" type="submit" value="ADD ACCOUNT">
+                    </form>
+                </div>
+           </div>
+   
+       </div>
+      </main>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="flow-white.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="css/Nav-Head.css"/>
+    <link rel="stylesheet" href="css/profile.css"/>
+
+    <title>Flow | Profile Details</title>
+</head>
+<body>
+     <!--NAVBAR-->  
+<nav class="navbar">
+    <ul class="navbar-nav">
+        <li class="">
+        <img src="flow-logo.png" class="logo">
+        </li>
+
+        <li class="nav-item">
+        <a href="home.html" class="nav-link">
+            <span class="material-symbols-outlined ">home</span>
+        </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="statistics.html" class="nav-link">
+            <span class="material-icons ">insert_chart_outlined</span>
+        </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="transactions.html" class="nav-link">
+            <span class="material-symbols-outlined">credit_card</span>
+        </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="accounts.html" class="nav-link">
+            <span class="material-icons ic-highlight">account_circle</span>
+        </a>
+        </li>
+    </ul>
+    </nav>
+<!--CONTENT-->
+<main>
+    <!--header-->
+        <div class="header">
+            <!--php code for date today-->
+            <p class="p-head"> December 23, 2022</p>
+            <span class="Span-Bold">Welcome back,</span>
+            <!--php code for FIRST NAME-->
+            <span class="Span-Bold highlight"> Rose
+            </span>
+        </div>
+        <h1 class="head-title">
+          Profile Details
+        </h1>
+        <div class="profile-cont">
+            <h1 class="head-title title-highlight">Edit My Account</h1>
+            <!--EDIT ACCOUNT--> 
+            <form>
+                <table class="acc-table">
+                    <tr>
+                        <td class="acc-head"> first name</td>
+                        <td><input type="text" class="input-acc" required></td>
+                    </tr>
+                    <tr>
+                        <td class="acc-head">last name</td>
+                        <td><input type="text" class="input-acc" required></td>
+                    </tr>
+                    <tr>
+                        <td class="acc-head">birthdate</td>
+                        <td><input type=date step=7 min=2004-01-01 class="input-acc" required></td>
+                    </tr>
+                    <tr>
+                        <td class="acc-head"> email address</td>
+                        <td> <input type="text" placeholder="Loremipsum@dolorsita.met" class="input-acc" required></td>
+                    </tr>
+                    <tr>
+                        <td class="acc-head">phone number</td>
+                        <td><input type="text" class="input-acc" name="contact" required></td>
+                    </tr>
+                   
+
+                    </table>
+    
+                    <!--button-->
+                    <input type="submit" value="SAVE CHANGES" class="add-button save"> 
+    
+                </form> 
+        </div>  
+
+
+        <div class="quick-acc">
+            <h3 class="small-title-black">Existing Bank Accounts</h3>
+            <table class="transaction">
+                <thead class="transc-head">
+                    <tr>
+                        <td>ACCOUNT NUMBER</td>
+                        <td>BANK NAME</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody class="body-tr">
+                    <tr class="data-row">
+                        <td class="td-desc">0000000000</td>
+                        <td class="td-highlight">BPI</td>
+
+                        <td class="transc-delete">
+                            <form action="transc-delete.php?" method="post">
+                                <input type="hidden" name="transaction_id" value="<?php $row['transaction_id'] ?>">
+                                <input class="delete-button" type="submit" name="delete" value="delete">
+                            </form>
+                        </td>     
+
+                    </tr>  
+                </tbody>
+
+            </table>
+        </div>
+        
+        
+    
+</body>
+</html>

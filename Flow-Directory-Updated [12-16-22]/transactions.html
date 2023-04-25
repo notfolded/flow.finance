@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="flow-white.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="css/Nav-Head.css"/>
+    <link rel="stylesheet" href="css/Main-Hero.css"/>
+    
+    <title>Flow | Transactions</title>
+</head>
+<body>
+<!--NAVBAR-->  
+<nav class="navbar">
+    <ul class="navbar-nav">
+        <li class="">
+        <img src="flow-logo.png" class="logo">
+        </li>
+
+        <li class="nav-item">
+        <a href="home.html" class="nav-link">
+            <span class="material-symbols-outlined ">home</span>
+        </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="statistics.html" class="nav-link">
+            <span class="material-icons ">insert_chart_outlined</span>
+        </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="transactions.html" class="nav-link">
+            <span class="material-symbols-outlined ic-highlight">credit_card</span>
+        </a>
+        </li>
+
+        <li class="nav-item">
+        <a href="accounts.html" class="nav-link">
+            <span class="material-icons">account_circle</span>
+        </a>
+        </li>
+    </ul>
+    </nav>
+<!--CONTENT-->
+<main>
+    <!--header-->
+        <div class="header">
+            <!--php code for date today-->
+            <p class="p-head"> December 23, 2022</p>
+            <span class="Span-Bold">Welcome back,</span>
+            <!--php code for FIRST NAME-->
+            <span class="Span-Bold highlight"> Rose
+            </span>
+        </div>
+        <h1 class="head-title">
+          Transaction History
+        </h1>
+        <div class="Hero-Main">
+            <!--LEFT SIDE-->
+                <div class="Left-Hero">    
+                    <!--TRANSACTION HISTORY-->
+                    <div class="transc-history">
+                        <table class="transaction">
+                            <thead class="transc-head">
+                                <tr>
+                                    <td>ACCOUNT</td>
+                                    <td>BANK</td>
+                                    <td>CATEGORY</td>
+                                    <td>DATE</td>
+                                    <td>AMMOUNT</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="data-row">
+                                    <td class="td-desc">123456789</td>
+                                    <td class="td-desc">BPI</td>
+                                    <td class="td-highlight">expense</td>
+                                    <td class="td-desc">December 9, 2022</td>
+                                    <td class="td-highlight">PHP 25.00</td>
+        
+                                    <td class="transc-delete">
+                                        <form action="transc-delete.php?" method="post">
+                                            <input type="hidden" name="transaction_id" value="<?php $row['transaction_id'] ?>">
+                                            <input class="delete-button" type="submit" name="delete" value="delete">
+                                        </form>
+                                    </td>     
+                                </tr>  
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+<!--RIGHT SIDE -->
+                <div class="Right-Hero">
+                    <!--QUICK ACTIONS-->
+                    <div class="quick-acc transc">
+                        <h3 class="small-title-black">ADD A TRANSACTION</h3>
+                        <form>
+                            <input class="rounded-form" type="text" name="Acc_num" placeholder="Account Number"><br>
+                            <input class="rounded-form" type="text" name="Amount" placeholder="Amount"><br>
+                            
+                            <input class="rounded-form" type="date" id="Date" name="Date" placeholder="2022-12-12">
+
+                            <select class="rounded-form" id="Category" ariplaceholder="Category">
+                                <option value="" disabled selected>Select Category</option>
+                                <option value="expense">Expense</option>
+                                <option value="income">Income</option>
+                                <option value="housing">Housing</option>
+                                <option value="transportation">Transportation</option>
+                                <option value="food">Food & Drinks</option>
+                                <option value="leisure">Leisure</option>
+                            </select>
+                            
+                            
+                            <input class="add-button" type="submit" value="ADD TRANSACTION">
+                        </form>
+                    </div>
+                </div>
+
+    
+</body>
+</html>
